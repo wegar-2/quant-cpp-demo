@@ -65,3 +65,20 @@ and the program is linked using:
 ```
 g++ program.o math_utils.o -o app_program
 ```
+
+
+## III. Multiple-Files Program After Moving Files into Sub-Directories
+
+Run compilation of the program using:
+```
+g++ -c -Iinclude program.cpp -o program.o
+```
+
+Also, run compilation of the implementation:
+```
+g++ -c -Iinclude src/math_utils.cpp -o math_utils.o
+```
+And run the linking:
+```
+g++ program.o math_utils.o -o app_program
+```
