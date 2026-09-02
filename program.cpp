@@ -1,6 +1,6 @@
 #include <iostream>
+#include "math_utils.hpp"
 
-int square(int x);
 
 int main() {
     std::cout << "Inside multi-file program" << std::endl;
