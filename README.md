@@ -1,5 +1,7 @@
 # Quant C++ Demo Project
 
+## I. Single-File Program
+
 ### 1. Compile single-file program `main.cpp` and run it:
 
 ```
@@ -45,4 +47,21 @@ g++ main.o -o app
 and then run the `app`:
 ```
 ./app
+```
+
+## II. Multiple-Files Program
+
+This program consists of two files:
+* `program.cpp`
+* `math_utils.cpp`
+
+The compilation to object files is done using the commands:
+```
+g++ -c program.cpp -o program.o
+g++ -c math_utils.cpp -o math_utils.o 
+```
+
+and the program is linked using:
+```
+g++ program.o math_utils.o -o app_program
 ```
