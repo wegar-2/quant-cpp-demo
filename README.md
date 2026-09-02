@@ -28,3 +28,10 @@ g++ -S main.cpp -o main.s
 ```
 
 The contents of `main.s` consist of assembler instruction - not pure machine-level code yet, still somewhat human-readable.
+
+### 4. Compile to object file without linking
+The command is:
+```
+g++ -c main.cpp -o main.o
+```
+Object files - e.g. the `main.o` file - contain machine code. Step lower than assembly - cf. the previous point.
