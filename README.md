@@ -20,4 +20,11 @@ g++ -E main.cpp -o main.i
 ```
 i.e. the flag `-E` has to be used.
 
-### 3. 
+### 3. Compile to assembly
+
+In order to comply the mini program in `main.cpp` to assembly only use the `-S` flag:
+```
+g++ -S main.cpp -o main.s
+```
+
+The contents of `main.s` consist of assembler instruction - not pure machine-level code yet, still somewhat human-readable.
