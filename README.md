@@ -35,3 +35,14 @@ The command is:
 g++ -c main.cpp -o main.o
 ```
 Object files - e.g. the `main.o` file - contain machine code. Step lower than assembly - cf. the previous point.
+
+
+### 5. Linking the object file
+So as to link the object file `main.o` created in the previous point, run:
+```
+g++ main.o -o app
+```
+and then run the `app`:
+```
+./app
+```
