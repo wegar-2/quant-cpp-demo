@@ -15,7 +15,7 @@ add_executable(
 
 target_include_directories(
     quant_cpp_demo
-    PRIVATE,
+    PRIVATE
     include
 )
 

@@ -82,3 +82,17 @@ And run the linking:
 ```
 g++ program.o math_utils.o -o app_program
 ```
+
+## IV. Building Using *cmake*
+
+Assuming that there is a `./build` directory and that the file `CMakeList.txt` is correct.
+
+Run the configuration / generation stage:
+```
+cmake -S . -B build
+```
+
+and then build with the command:
+```
+cmake --build build
+```
